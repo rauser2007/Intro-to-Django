@@ -1,0 +1,5 @@
+<h1>{{ post.title }}</h1>
+<p>Автор: {{ post.author.name }}</p>
+<p>Опубліковано: {{ post.published_date }}</p>
+<div>{{ post.content }}</div>
+<a href="{% url 'posts_by_author' post.author.id %}">Всі пости цього автора</a>
